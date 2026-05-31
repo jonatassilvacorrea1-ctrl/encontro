@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer sair comigo?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="tela-inicial">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmszdXNndm81b3pwY2Zidm84N3N6M3B3Mmd5Y3A0bnd0cm90Y29pYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Gatinho pidão" class="gif">
+        
+        <h1>Quer ir num encontro comigo? 🌹</h1>
+        <p>Prometo que vai ser legal!</p>
+        
+        <div class="botoes">
+            <button id="sim" onclick="aceitou()">Sim!</button>
+            <button id="nao">Não</button>
+        </div>
+    </div>
+
+    <div class="container escondido" id="tela-agendamento">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW01M3N6bndpZ3VvYXN5Ym10bndpZ3VvYXN5Ym10bndpZ3VvbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/S9idDUMMtof6Yv9p7G/giphy.gif" alt="Dança de comemoração" class="gif">
+
+        <h2>Nem acredito que você aceitou! 😍</h2>
+        <p>Agora escolha o dia e a hora que fica melhor:</p>
+        
+        <div class="campo">
+            <label for="data">Escolha o dia:</label>
+            <input type="date" id="data">
+        </div>
+
+        <div class="campo">
+            <label for="horario">Escolha o horário:</label>
+            <select id="horario">
+                <option value="">Selecione um horário...</option>
+                <option value="Tarde (14:00)">À tarde (14:00)</option>
+                <option value="Final de tarde (17:00)">Final de tarde (17:00)</option>
+                <option value="Noite (19:30)">À noite (19:30)</option>
+                <option value="Madrugada (22:00)">Mais tarde (22:00)</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label>O que vamos fazer?</label>
+            <div class="opcoes-role">
+                <button class="btn-opcao" onclick="selecionarAtividade('Praça')">Praça 🌳</button>
+                <button class="btn-opcao" onclick="selecionarAtividade('Sorvete')">Sorvete 🍦</button>
+                <button class="btn-opcao" onclick="selecionarAtividade('Tapioquinha')">Tapioquinha 🥟</button>
+                <button class="btn-opcao" onclick="selecionarAtividade('Café')">Café ☕</button>
+                <button class="btn-opcao" onclick="selecionarAtividade('Tu escolhe')">Tu escolhe 🙈</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
